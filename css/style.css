@@ -618,7 +618,7 @@ span,
   justify-content: space-between;
   margin-top: 20px;
 }
-.hotel-photo {
+/* .hotel-photo {
   background: linear-gradient(
       180deg,
       rgba(0, 122, 223, 0.48),
@@ -628,6 +628,12 @@ span,
   width: 728px;
   height: 450px;
   border-radius: 8px;
+} */
+.hero-hotel-pic {
+  width: 728px;
+  height: 450px;
+  border-radius: 8px;
+  background: #9bc8e9;
 }
 .info {
   display: flex;

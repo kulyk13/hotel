@@ -366,6 +366,11 @@ span,
   margin: 0 auto;
   padding: 0 10px;
 }
+.section-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 /* ============ COMMON STYLES END ============ */
 
 /* ============ HEADER START ============ */
@@ -550,7 +555,7 @@ span,
 /* ============ HEADER END ============ */
 
 /* ============ HER0 START ============ */
-.hero-section {
+.hero {
   padding: 20px 0 70px 0;
 }
 .path-links {
@@ -705,4 +710,38 @@ span,
   font-size: 14px;
   font-weight: 600;
 }
-/* ============ HER0 END ============ */
+.info-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.info-menu a {
+  transition: 0.3s;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  border-bottom: 4px solid transparent;
+}
+.info-menu a:hover,
+.info-menu a:focus-within {
+  color: #ec1f46;
+  border-bottom: 4px solid #ec1f46;
+}
+.list-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.list {
+  margin-top: 30px;
+  width: 49%;
+}
+.list-title {
+  background: #0a223d;
+  padding: 15px;
+  color: #fff;
+  border-radius: 4px 4px 0px 0px;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* ============ HER0 END ============ */ ;

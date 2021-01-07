@@ -362,20 +362,21 @@ span,
 }
 .container {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1130px;
   margin: 0 auto;
-}
-.hover-link {
-  transition: 0.3s;
-  padding: 10px;
-}
-.hover-link:hover,
-.hover-link:focus-within {
-  color: #ec1f46;
+  padding: 0 10px;
 }
 /* ============ COMMON STYLES END ============ */
 
 /* ============ HEADER START ============ */
+.header a {
+  transition: 0.3s;
+  padding: 10px;
+}
+.header a:hover,
+.header a:focus-within {
+  color: #ec1f46;
+}
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -388,7 +389,6 @@ span,
 .header-top__left-side {
   display: flex;
   align-items: center;
-  padding-left: 10px;
 }
 .header-top__left-side p:first-of-type {
   font-weight: 700;
@@ -403,9 +403,9 @@ span,
 .header-top__link {
   align-items: center;
 }
-.header-top__link:first-of-type {
-  margin-right: 80px;
-  font-weight: 400;
+.header-top__link:last-of-type {
+  margin-left: 80px;
+  padding-right: 0;
 }
 .header-top img {
   margin-right: 20px;
@@ -416,15 +416,19 @@ span,
   padding: 30px 0;
   background: #fff;
 }
-.logo {
+.header .logo {
   font-family: "Luckiest Guy", serif;
   font-size: 24px;
-  padding: 10px;
-  margin-right: 110px;
+  margin-right: 90px;
+  padding: 10px 10px 10px 0;
 }
 .logo span {
   color: #ec1f46;
   margin: 0 5px;
+}
+.header .logo:hover,
+.header .logo:focus-within {
+  color: #000;
 }
 .search {
   display: flex;
@@ -435,7 +439,7 @@ span,
   height: 12px;
 }
 .input {
-  padding: 12px 170px 12px 20px;
+  padding: 13.5px 112px 13.5px 20px;
   border-radius: 6px 0 0 6px;
   font-size: 12px;
   background: #f5fafe;
@@ -443,7 +447,7 @@ span,
   outline-color: hsl(207, 83%, 69%);
 }
 .btn-form {
-  padding: 9.3px 25px;
+  padding: 12.3px 26.5px;
   color: #fff;
   background: #ec1f46;
   border-radius: 0 6px 6px 0;
@@ -460,7 +464,7 @@ span,
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   width: 20px;
   height: 20px;
@@ -478,7 +482,7 @@ span,
 .accaunt-menu {
   display: flex;
   align-items: center;
-  margin-left: 55px;
+  margin-left: 45px;
 }
 .accaunt-link {
   align-items: center;
@@ -497,6 +501,9 @@ span,
 }
 .dropmenu-wrap {
   position: relative;
+}
+.dropmenu-wrap .arrow {
+  padding-right: 0;
 }
 .dropmenu {
   opacity: 0;
@@ -534,4 +541,162 @@ span,
   font-weight: 700;
   text-transform: uppercase;
 }
+.menu li:first-of-type > a {
+  padding-left: 0;
+}
+.menu li:last-of-type > a {
+  padding-right: 0;
+}
 /* ============ HEADER END ============ */
+
+/* ============ HER0 START ============ */
+.hero-section {
+  padding: 20px 0 70px 0;
+}
+.path-links {
+  margin-bottom: 40px;
+  font-size: 10px;
+}
+.path-links a {
+  transition: 0.3s;
+}
+.path-links a:nth-child(n + 2)::before {
+  content: "/";
+  margin-right: 3px;
+  color: #333;
+}
+.path-links a:hover,
+.path-links a:focus-within {
+  color: #ec1f46;
+}
+.star-rate {
+  font-size: 8px;
+  color: #f2994a;
+}
+.inscription {
+  display: flex;
+  align-items: center;
+}
+.hero-pic-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1.26;
+  transition: 0.3s;
+}
+.hero-pic-title:hover,
+.hero-pic-title:focus-within {
+  color: #ec1f46;
+  text-decoration: underline;
+}
+.inscription > span {
+  margin: 0 auto 0 20px;
+  background: #ec1f46;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 5.1px 9.1px;
+}
+.mark {
+  font-size: 8px;
+  background: #ec1f46;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  padding: 9.1px 8.7px;
+}
+.mark p:nth-child(2) {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+.mark p > span {
+  font-size: 10px;
+}
+.hero-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.hotel-photo {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 122, 223, 0.48),
+      rgba(255, 255, 255, 0.128)
+    ),
+    url("../img/main.webp") no-repeat 0 0 / cover;
+  width: 728px;
+  height: 450px;
+  border-radius: 8px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info img {
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+}
+.options {
+  background: #0a223d;
+  border-radius: 8px;
+  padding: 27px;
+  color: #fff;
+  font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.options-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.options-side {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.36;
+}
+.options-side img {
+  width: 14px;
+  height: 14px;
+}
+.options-side > p:first-child {
+  font-size: 10px;
+}
+.options-side > p:nth-child(2) {
+  font-size: 24px;
+}
+.options-side > p:last-child {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.options-side > span {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.options-side > span:last-child {
+  margin-top: 31px;
+}
+.options-side > span:first-child p {
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+.options-side > span:last-child p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-options {
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 17px;
+  justify-content: center;
+  background: #ec1f46;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* ============ HER0 END ============ */

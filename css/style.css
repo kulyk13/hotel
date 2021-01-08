@@ -412,10 +412,9 @@ span,
   margin-left: 80px;
   padding-right: 0;
 }
-.header-top img {
+.header-top i {
   margin-right: 20px;
-  width: 18px;
-  height: 18px;
+  font-size: 18px;
 }
 .header-main {
   padding: 30px 0;
@@ -452,14 +451,17 @@ span,
   outline-color: hsl(207, 83%, 69%);
 }
 .btn-form {
-  padding: 12.3px 26.5px;
+  padding: 20px 32.5px;
   color: #fff;
-  background: #ec1f46;
+  background: url("../img/search.svg") no-repeat 50% 50%, #ec1f46;
   border-radius: 0 6px 6px 0;
   border: none;
   outline-color: hsl(349, 83%, 30%);
 }
 .cart {
+  background: url("../img/cart.svg") no-repeat 0 0 / cover;
+  width: 24px;
+  height: 24px;
   padding: 10px;
   position: relative;
   margin-left: auto;
@@ -474,34 +476,30 @@ span,
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -10px;
+  top: -10px;
   color: #fff;
   background: #ec1f46;
   border-radius: 50%;
 }
-.cart img {
-  width: 24px;
-  height: 24px;
-}
-.accaunt-menu {
+.account-menu {
   display: flex;
   align-items: center;
-  margin-left: 45px;
+  margin-left: 68px;
 }
-.accaunt-link {
+.account-link {
   align-items: center;
 }
-.accaunt-link img {
+.account-link img {
   width: 40px;
   height: 40px;
 }
-.accaunt-link p {
+.account-link p {
   font-size: 14px;
   margin-left: 20px;
 }
-.accaunt-link:hover,
-.accaunt-link:focus-within {
+.account-link:hover,
+.account-link:focus-within {
   text-decoration: underline;
 }
 .dropmenu-wrap {
@@ -555,52 +553,59 @@ span,
 /* ============ HEADER END ============ */
 
 /* ============ HER0 START ============ */
-.hero {
+.banner {
   padding: 20px 0 70px 0;
 }
-.path-links {
+.bread-crumbs {
   margin-bottom: 40px;
   font-size: 10px;
 }
-.path-links a {
+.bread-crumbs a {
   transition: 0.3s;
 }
-.path-links a:nth-child(n + 2)::before {
+.bread-crumbs a:nth-child(n + 2)::before {
   content: "/";
   margin-right: 3px;
   color: #333;
 }
-.path-links a:hover,
-.path-links a:focus-within {
+.bread-crumbs a:hover,
+.bread-crumbs a:focus-within {
   color: #ec1f46;
-}
-.star-rate {
-  font-size: 8px;
-  color: #f2994a;
 }
 .inscription {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.hero-pic-title {
+.star-rate {
+  font-size: 8px;
+  color: #f2994a;
+  margin-bottom: 5px;
+}
+.banner-title {
+  display: flex;
+  align-items: center;
+}
+.banner-pic-title {
   font-size: 24px;
   text-transform: uppercase;
   line-height: 1.26;
   transition: 0.3s;
 }
-.hero-pic-title:hover,
-.hero-pic-title:focus-within {
+.banner-pic-title:hover,
+.banner-pic-title:focus-within {
   color: #ec1f46;
   text-decoration: underline;
 }
-.inscription > span {
-  margin: 0 auto 0 20px;
+.inscription h4 {
+  display: inline-flex;
   background: #ec1f46;
   border-radius: 3px;
   color: #fff;
   font-size: 10px;
   font-weight: 600;
-  padding: 5.1px 9.1px;
+  padding: 5.2px 9.1px;
+  margin-left: 20px;
 }
 .mark {
   font-size: 8px;
@@ -618,23 +623,12 @@ span,
 .mark p > span {
   font-size: 10px;
 }
-.hero-wrap {
+.banner-wrap {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-/* .hotel-photo {
-  background: linear-gradient(
-      180deg,
-      rgba(0, 122, 223, 0.48),
-      rgba(255, 255, 255, 0.128)
-    ),
-    url("../img/main.webp") no-repeat 0 0 / cover;
-  width: 728px;
-  height: 450px;
-  border-radius: 8px;
-} */
-.hero-hotel-pic {
+.banner-hotel-pic {
   width: 728px;
   height: 450px;
   border-radius: 8px;
@@ -644,11 +638,6 @@ span,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.info img {
-  width: 347px;
-  height: 213px;
-  border-radius: 10px;
 }
 .options {
   background: #0a223d;
@@ -668,14 +657,10 @@ span,
   flex-direction: column;
   line-height: 1.36;
 }
-.options-side img {
-  width: 14px;
-  height: 14px;
-}
 .options-side > p:first-child {
   font-size: 10px;
 }
-.options-side > p:nth-child(2) {
+.options-side > h4 {
   font-size: 24px;
 }
 .options-side > p:last-child {
@@ -691,8 +676,11 @@ span,
 .options-side > span:last-child {
   margin-top: 31px;
 }
-.options-side > span:first-child p {
-  margin-left: 10px;
+.info-pic {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.options-side > span:first-child {
   margin-bottom: 8px;
 }
 .options-side > span:last-child p {
@@ -709,6 +697,10 @@ span,
   border-radius: 4px;
   font-size: 14px;
   font-weight: 600;
+}
+.info iframe {
+  display: block;
+  border-radius: 10px;
 }
 .info-menu {
   display: flex;

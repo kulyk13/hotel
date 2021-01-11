@@ -362,9 +362,9 @@ span,
 }
 .container {
   width: 100%;
-  max-width: 1130px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .section-subtitle {
   font-size: 24px;
@@ -400,7 +400,7 @@ span,
   margin-right: 10px;
 }
 .header-top__left-side a {
-  padding-left: 0;
+  margin-left: -10px;
 }
 .header-top__left-side a:hover {
   text-decoration: underline;
@@ -410,7 +410,7 @@ span,
 }
 .header-top__link:last-of-type {
   margin-left: 80px;
-  padding-right: 0;
+  margin-right: -10px;
 }
 .header-top i {
   margin-right: 20px;
@@ -424,7 +424,8 @@ span,
   font-family: "Luckiest Guy", serif;
   font-size: 24px;
   margin-right: 90px;
-  padding: 10px 10px 10px 0;
+  margin-left: -10px;
+  padding: 10px;
 }
 .logo span {
   color: #ec1f46;
@@ -506,7 +507,7 @@ span,
   position: relative;
 }
 .dropmenu-wrap .arrow {
-  padding-right: 0;
+  margin-right: -10px;
 }
 .dropmenu {
   opacity: 0;
@@ -545,10 +546,10 @@ span,
   text-transform: uppercase;
 }
 .menu li:first-of-type > a {
-  padding-left: 0;
+  margin-left: -10px;
 }
 .menu li:last-of-type > a {
-  padding-right: 0;
+  margin-right: -10px;
 }
 /* ============ HEADER END ============ */
 
@@ -590,14 +591,14 @@ span,
   font-size: 24px;
   text-transform: uppercase;
   line-height: 1.26;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 .banner-pic-title:hover,
 .banner-pic-title:focus-within {
   color: #ec1f46;
   text-decoration: underline;
 }
-.inscription h4 {
+.inscription h3 {
   display: inline-flex;
   background: #ec1f46;
   border-radius: 3px;
@@ -628,10 +629,30 @@ span,
   justify-content: space-between;
   margin-top: 20px;
 }
+.banner-img-wrap {
+  position: relative;
+  z-index: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.banner-img-wrap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 122, 223, 0.48) 0%,
+    rgba(255, 255, 255, 0.128) 100%
+  );
+}
 .banner-hotel-pic {
   width: 728px;
   height: 450px;
-  border-radius: 8px;
+  display: block;
   background: #9bc8e9;
 }
 .info {
@@ -706,13 +727,15 @@ span,
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+  margin-bottom: 40px;
   font-size: 14px;
   font-weight: 700;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 .info-menu a {
   transition: 0.3s;
-  padding-bottom: 15px;
-  margin-bottom: 40px;
+  padding: 10px 5px 15px 5px;
   border-bottom: 4px solid transparent;
 }
 .info-menu a:hover,
@@ -720,33 +743,41 @@ span,
   color: #ec1f46;
   border-bottom: 4px solid #ec1f46;
 }
-.list-wrap {
+.list-sm-wrap {
   display: flex;
   justify-content: space-between;
 }
 .list {
   margin-top: 30px;
   width: 48.5%;
+  background: #fff;
+  border-radius: 4px 4px 8px 8px;
 }
 .list li {
   display: inline-flex;
   align-items: center;
 }
-.list-side {
-  display: flex;
-  flex-direction: column;
+.list-sm {
+  columns: 2;
+  display: block;
 }
-.list-side li:nth-last-child(n + 2) {
-  margin-bottom: 23.6px;
+.list-sm li:nth-child(n + 2) {
+  margin-top: 23.6px;
+}
+.list-sm li:nth-child(4) {
+  margin-top: 0;
 }
 .list-left-part {
   width: 205px;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100px;
   height: 100%;
 }
-.list-left-part span {
+.list-left-part li {
   margin-bottom: 10px;
+  align-items: flex-start;
 }
 .list-left-part p {
   font-style: italic;
@@ -767,10 +798,8 @@ span,
   font-weight: 700;
 }
 .list-content {
-  background: #fff;
   padding: 25px;
   display: flex;
-  border-radius: 0 0 8px 8px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
@@ -778,9 +807,6 @@ span,
 .list-content i {
   font-size: 18px;
   margin-right: 20px;
-}
-.sublist li:nth-last-child(n + 2) {
-  margin-bottom: 20px;
 }
 .list-subtitle {
   font-size: 13px;
@@ -793,7 +819,14 @@ span,
   flex-direction: column;
   width: 266px;
 }
-.list-lg > ul > li:nth-child(n + 4) {
+.sublist ul {
+  display: flex;
+  flex-direction: column;
+}
+.sublist li:nth-last-child(n + 2) {
+  margin-bottom: 20px;
+}
+.list-lg .sublist:nth-child(n + 4) {
   margin-top: 80px;
 }
 /* ============ HER0 END ============ */ ;

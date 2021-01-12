@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://maps.gstatic.com" />
     <link rel="preconnect" href="https://maps.googleapis.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+
     <link rel="preload" href="css/style.css" as="style" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
@@ -64,7 +66,7 @@
                     </li>
                     <li class="dropmenu-wrap">
                         <a href="javascript:void(0)" rel="nofollow"
-                            class=" arrow fas fa-chevron-down"></a>
+                            class="arrow fas fa-chevron-down"></a>
                         <ul class="dropmenu drop">
                             <li><a href="#">My Profile</a></li>
                             <li><a href="#">My Tours</a></li>
@@ -89,7 +91,7 @@
         </nav>
     </header>
     <article class="banner">
-        <div class="container">
+        <div class="container section-padding">
             <div class="bread-crumbs">
                 <a href="#">Home</a>
                 <a href="#">Flash Offers</a>
@@ -302,21 +304,17 @@
                                     <li><i class="fas fa-check-circle"></i>Live
                                         music</li>
                                     <li><i class="fas fa-check-circle"></i>DJ
-                                        &
-                                        Mauritian Dance Show</li>
+                                        & Mauritian Dance Show</li>
                                 </ul>
                             </div>
                             <div class="sublist">
-                                <h4 class="list-subtitle">Check In & Check
-                                    Out
+                                <h4 class="list-subtitle">Check In & Check Out
                                 </h4>
                                 <ul>
                                     <li><i class="fas fa-check-circle"></i>Check
-                                        In
-                                        Time 14:00</li>
+                                        In Time 14:00</li>
                                     <li><i class="fas fa-check-circle"></i>Check
-                                        Out
-                                        Time 11:00</li>
+                                        Out Time 11:00</li>
                                 </ul>
                             </div>
                         </div>
@@ -325,6 +323,258 @@
             </section>
         </div>
     </article>
+    <article class="packages">
+        <div class="container section-padding">
+            <h2 class="section-title">Other packages</h2>
+            <div class="cards">
+                <div class="wide-card"
+                    onclick="this.className = (this.className == 'wide-card' ? 'card' : 'wide-card')">
+                    <div class="card-img__wrap">
+                        <img width="1" height="1" src="img/big-card.webp"
+                            alt="hotel photo" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content__top">
+                            <div class="star-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="card-title">Hotel Blue Haven</h3>
+                        </div>
+                        <div class="card-description">
+                            <p>Aute quis duis excepteur excepteur ipsum cat
+                                eiusmod consectetur enim laborum magna llit.
+                                Ipsum est fugiat velit ea llamco do esse ut in
+                                veniam sun in onsequat. Aute quis duis epteur
+                                excepteur ipsum occaecat eiusmod nsectetur enim
+                                laborum magna mollit. Ipsum est fugiat velit ea
+                                ullamco do</p>
+                        </div>
+                        <div class="card-info">
+                            <p><i class="icon fas fa-map-marker-alt"></i>1749
+                                Wheeler Ridge Delaware</p>
+                            <p><i class=" far fa-user"></i>2 x Guests</p>
+                            <p><i class="fas fa-home"></i>1 x Room</p>
+                        </div>
+                        <div class="card-content__bottom">
+                            <div class="price-block">
+                                <p class="cut-price">$ 10,500</p>
+                                <h4 class="card-price">$ 8,500</h4>
+                            </div>
+                            <a href="#" class="btn-card">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"
+                    onclick="this.className = (this.className == 'card' ? 'wide-card' : 'card')">
+                    <div class="card-img__wrap">
+                        <img width="1" height="1" src="img/card2.webp"
+                            alt="hotel photo" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content__top">
+                            <div class="star-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="card-title">LUX* Belle Mare</h3>
+                        </div>
+                        <div class="card-description">
+                            <p>Aute quis duis excepteur excepteur ipsum cat
+                                eiusmod consectetur enim laborum magna llit.
+                                Ipsum est fugiat velit ea llamco do esse ut in
+                                veniam sun in onsequat. Aute quis duis epteur
+                                excepteur ipsum occaecat eiusmod nsectetur enim
+                                laborum magna mollit. Ipsum est fugiat velit ea
+                                ullamco do</p>
+                        </div>
+                        <div class="card-info">
+                            <p><i class="icon fas fa-map-marker-alt"></i>1749
+                                Wheeler Ridge Delaware</p>
+                            <p><i class=" far fa-user"></i>2 x Guests</p>
+                            <p><i class="fas fa-home"></i>1 x Room</p>
+                        </div>
+                        <div class="card-content__bottom">
+                            <div class="price-block">
+                                <p class="cut-price">$ 8,500</p>
+                                <h4 class="card-price">$ 3,000</h4>
+                            </div>
+                            <a href="#" class="btn-card">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"
+                    onclick="this.className = (this.className == 'card' ? 'wide-card' : 'card')">
+                    <div class="card-img__wrap">
+                        <img width="1" height="1" src="img/card4.webp"
+                            alt="card photo" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content__top">
+                            <div class="star-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="card-title">White Palace</h3>
+                        </div>
+                        <div class="card-description">
+                            <p>Aute quis duis excepteur excepteur ipsum cat
+                                eiusmod consectetur enim laborum magna llit.
+                                Ipsum est fugiat velit ea llamco do esse ut in
+                                veniam sun in onsequat. Aute quis duis epteur
+                                excepteur ipsum occaecat eiusmod nsectetur enim
+                                laborum magna mollit. Ipsum est fugiat velit ea
+                                ullamco do</p>
+                        </div>
+                        <div class="card-info">
+                            <p><i class="icon fas fa-map-marker-alt"></i>1749
+                                Wheeler Ridge Delaware</p>
+                            <p><i class=" far fa-user"></i>2 x Guests</p>
+                            <p><i class="fas fa-home"></i>1 x Room</p>
+                        </div>
+                        <div class="card-content__bottom">
+                            <div class="price-block">
+                                <p class="cut-price">$ 10,500</p>
+                                <h4 class="card-price">$ 9,500</h4>
+                            </div>
+                            <a href="#" class="btn-card">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"
+                    onclick="this.className = (this.className == 'card' ? 'wide-card' : 'card')">
+                    <div class="card-img__wrap">
+                        <img width="1" height="1" src="img/card3.webp"
+                            alt="card photo" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content__top">
+                            <div class="star-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="card-title">Luxury Place</h3>
+                        </div>
+                        <div class="card-description">
+                            <p>Aute quis duis excepteur excepteur ipsum cat
+                                eiusmod consectetur enim laborum magna llit.
+                                Ipsum est fugiat velit ea llamco do esse ut in
+                                veniam sun in onsequat. Aute quis duis epteur
+                                excepteur ipsum occaecat eiusmod nsectetur enim
+                                laborum magna mollit. Ipsum est fugiat velit ea
+                                ullamco do</p>
+                        </div>
+                        <div class="card-info">
+                            <p><i class="icon fas fa-map-marker-alt"></i>1749
+                                Wheeler Ridge Delaware</p>
+                            <p><i class=" far fa-user"></i>2 x Guests</p>
+                            <p><i class="fas fa-home"></i>1 x Room</p>
+                        </div>
+                        <div class="card-content__bottom">
+                            <div class="price-block">
+                                <p class="cut-price">$ 4,500</p>
+                                <h4 class="card-price">$ 2,500</h4>
+                            </div>
+                            <a href="#" class="btn-card">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card"
+                    onclick="this.className = (this.className == 'card' ? 'wide-card' : 'card')">
+                    <div class="card-img__wrap">
+                        <img width="1" height="1" src="img/card1.webp"
+                            alt="card photo" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content__top">
+                            <div class="star-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="card-title">Hotel Five Star</h3>
+                        </div>
+                        <div class="card-description">
+                            <p>Aute quis duis excepteur excepteur ipsum cat
+                                eiusmod consectetur enim laborum magna llit.
+                                Ipsum est fugiat velit ea llamco do esse ut in
+                                veniam sun in onsequat. Aute quis duis epteur
+                                excepteur ipsum occaecat eiusmod nsectetur enim
+                                laborum magna mollit. Ipsum est fugiat velit ea
+                                ullamco do</p>
+                        </div>
+                        <div class="card-info">
+                            <p><i class="icon fas fa-map-marker-alt"></i>1749
+                                Wheeler Ridge Delaware</p>
+                            <p><i class=" far fa-user"></i>2 x Guests</p>
+                            <p><i class="fas fa-home"></i>1 x Room</p>
+                        </div>
+                        <div class="card-content__bottom">
+                            <div class="price-block">
+                                <p class="cut-price">$ 6,500</p>
+                                <h4 class="card-price">$ 3,500</h4>
+                            </div>
+                            <a href="#" class="btn-card">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="feedback">
+        <div class="container section-padding feedback-wrap">
+            <h2 class="section-title">What people thinks about us</h2>
+            <a href="#" class="arrow-left fas fa-chevron-left"></a>
+            <a href="#" class="arrow-right fas fa-chevron-right"></a>
+            <div class="review-card">
+                <div class="profile-card">
+                    <img width="1" height="1" src="img/review-pic.webp"
+                        alt="girl photo" loading="lazy">
+                    <h3>Megan Fox</h3>
+                    <p>Stayed 18 Nov, 2019</p>
+                    <div class="star-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p>It was very nice hotel with cleanliness. Staff behavior
+                    was good and polite. They welcome us very well. Issue
+                    was only that Lift was not in working and we were
+                    allotted to 3rd floor and amenities articles were in
+                    corner of gallery which were giving bad feeling.
+                    Breakfast was good and support of the staff was also
+                    very nice. Location is not good as per atmosphere, it is
+                    very nearby most of the popular places but self location
+                    in a narrow street is not good. Overall it was a good
+                    experience and could recommend. </p>
+            </div>
+        </div>
+    </article>
+
+
+    <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        as="style" />
+    <link rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/app.js"></script>
 </body>
 
 </html>

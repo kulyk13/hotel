@@ -366,6 +366,15 @@ span,
   margin: 0 auto;
   padding: 0 15px;
 }
+.section-padding {
+  padding-bottom: 100px;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
 .section-subtitle {
   font-size: 24px;
   font-weight: 700;
@@ -553,9 +562,9 @@ span,
 }
 /* ============ HEADER END ============ */
 
-/* ============ HER0 START ============ */
+/* ============ BANNER START ============ */
 .banner {
-  padding: 20px 0 70px 0;
+  padding-top: 20px;
 }
 .bread-crumbs {
   margin-bottom: 40px;
@@ -829,4 +838,225 @@ span,
 .list-lg .sublist:nth-child(n + 4) {
   margin-top: 80px;
 }
-/* ============ HER0 END ============ */ ;
+/* ============ BANNER END ============ */
+
+/* ============ PACKAGES START ============ */
+.cards {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* ============ BIG CARD ============ */
+.wide-card {
+  width: 730px;
+  height: 500px;
+  background: #0a223d;
+  display: flex;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.wide-card .card-img__wrap {
+  width: 50%;
+}
+.wide-card .card-img__wrap::before {
+  font-size: 12px;
+  padding: 9.3px 17.7px;
+}
+.wide-card img {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
+}
+.wide-card .card-content {
+  padding: 45px 20px 30px 45px;
+  width: 50%;
+}
+.wide-card .star-rate {
+  display: block;
+  margin-bottom: 10px;
+}
+.wide-card .card-description {
+  display: block;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+/* ============ BIG CARD ============ */
+
+/* ============ SMALL CARD ============ */
+.card {
+  background: #0a223d;
+  width: 350px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.card-img__wrap {
+  position: relative;
+  z-index: 0;
+}
+.card-img__wrap::before {
+  content: "Flash offer";
+  position: absolute;
+  left: 0;
+  top: 26px;
+  z-index: 1;
+  padding: 5px 10.1px;
+  border-radius: 0 4px 4px 0;
+  background: #ec1f46;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 600;
+}
+.card img {
+  width: 350px;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  background: #046d99;
+}
+.card-content {
+  padding: 30px 20px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  justify-content: space-between;
+  color: #fff;
+}
+.card .star-rate {
+  display: none;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 27px;
+}
+.card-description {
+  display: none;
+}
+.card-info {
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+.card-info p {
+  display: flex;
+}
+.card-info p:nth-child(n + 2) {
+  margin-top: 12px;
+}
+.card-info p:first-child i {
+  padding-left: 2px;
+  margin-right: 16px;
+}
+.card-info p:nth-child(2) i {
+  padding-left: 1px;
+  margin-right: 15px;
+}
+.card-info i {
+  font-size: 14px;
+  margin-right: 13px;
+}
+.card-content__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+.cut-price {
+  font-size: 14px;
+  margin-bottom: 7px;
+  text-decoration: line-through;
+}
+.card-price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.26;
+}
+.btn-card {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13.2px 26.1px;
+  border-radius: 4px;
+  background: #ec1f46;
+}
+/* ============ SMALL CARD ============ */
+
+/* ============ PACKAGES END ============ */
+
+/* ============ REVIEW START ============ */
+.feedback-wrap {
+  position: relative;
+}
+.feedback-wrap a {
+  position: absolute;
+  padding: 10px;
+  top: 228px;
+  font-size: 18px;
+  color: #828282;
+}
+.feedback-wrap .arrow-left {
+  left: 5px;
+}
+.feedback-wrap .arrow-right {
+  right: 5px;
+}
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 730px;
+  background: #fff;
+  padding: 15px 100px 30px 100px;
+  margin: 115px auto 0 auto;
+  position: relative;
+  z-index: 0;
+}
+.review-card::before {
+  content: "";
+  background: url("../img/quotes.svg") no-repeat;
+  position: absolute;
+  top: 13px;
+  left: 65px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.review-card::after {
+  content: "";
+  position: absolute;
+  background: url("../img/quotes-reverse.svg") no-repeat;
+  top: 120px;
+  left: 595px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.review-card p {
+  text-align: justify;
+  line-height: 1.6;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+.profile-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profile-card h3 {
+  font-weight: 700;
+  color: #ec1f46;
+}
+.profile-card p {
+  font-size: 10px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+/* ============ REVIEW END ============ */

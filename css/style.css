@@ -444,11 +444,11 @@ span,
 .header .logo:focus-within {
   color: #000;
 }
-.search {
+.form {
   display: flex;
   align-items: center;
 }
-.search img {
+.form img {
   width: 12px;
   height: 12px;
 }
@@ -989,17 +989,19 @@ span,
 .feedback-wrap {
   position: relative;
 }
-.feedback-wrap a {
+.slider-arrow-back,
+.slider-arrow-forward {
   position: absolute;
   padding: 10px;
   top: 228px;
   font-size: 18px;
   color: #828282;
+  z-index: 1;
 }
-.feedback-wrap .arrow-left {
+.slider-arrow-back {
   left: 5px;
 }
-.feedback-wrap .arrow-right {
+.slider-arrow-forward {
   right: 5px;
 }
 .review-card {
@@ -1049,6 +1051,7 @@ span,
   height: 90px;
   border-radius: 50%;
   margin-bottom: 10px;
+  object-fit: cover;
 }
 .profile-card h3 {
   font-weight: 700;
@@ -1060,3 +1063,46 @@ span,
   margin-bottom: 5px;
 }
 /* ============ REVIEW END ============ */
+
+/* ============ CTA START ============ */
+.cta {
+  padding-top: 100px;
+  background: linear-gradient(rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)),
+    url("../img/background.webp") no-repeat 0 0 / cover;
+}
+.cta-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 66%;
+  margin: 0 auto;
+}
+.cta-title {
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 24px;
+  font-weight: 300;
+  display: inline-flex;
+  flex-direction: column;
+}
+.cta-title span {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.26;
+  margin-top: 5px;
+}
+.send-email .input {
+  padding: 19.1px 77.6px 19.1px 33px;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  font-weight: 300;
+  background: #fff;
+}
+.btn-send {
+  padding: 19.5px 16.2px;
+  background: #ec1f46;
+  border-radius: 0 4px 4px 0;
+  font-weight: 700;
+}
+/* ============ CTA END ============ */

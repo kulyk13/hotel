@@ -460,7 +460,7 @@ button {
   height: 12px;
 }
 .input {
-  padding: 13px 119px 13px 20px;
+  padding: 13.2px 111.4px 13.2px 20px;
   border-radius: 6px 0 0 6px;
   font-size: 12px;
   background: #f5fafe;
@@ -1100,7 +1100,7 @@ button {
   margin-top: 5px;
 }
 .send-email .input {
-  padding: 19.5px 82.1px 19.5px 33px;
+  padding: 19.1px 82.6px 19.1px 33px;
   border-radius: 4px 0 0 4px;
   font-size: 14px;
   font-weight: 300;

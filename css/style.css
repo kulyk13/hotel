@@ -360,6 +360,13 @@ span,
   text-decoration: none;
   color: inherit;
 }
+button{
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
 .container {
   width: 100%;
   max-width: 1140px;

@@ -51,10 +51,12 @@
                     plan</a>
                 <form action="#" class="form">
                     <input type="search" placeholder="Search Location"
-                        name="search" class="input" required />
-                    <button type="submit" class="btn-form"></button>
+                        name="search" aria-label="search location" class="input"
+                        required />
+                    <button type="submit" aria-label="search"
+                        class="btn-form"></button>
                 </form>
-                <a href="#" class="cart"></a>
+                <a href="#" aria-label="open cart" class="cart"></a>
                 <ul class="account-menu">
                     <li>
                         <a href="#" class="account-link">
@@ -65,8 +67,8 @@
                         </a>
                     </li>
                     <li class="dropmenu-wrap">
-                        <a href="javascript:void(0)" rel="nofollow"
-                            class="arrow fas fa-chevron-down"></a>
+                        <button aria-label="dropmenu"
+                            class="arrow fas fa-chevron-down"></button>
                         <ul class="dropmenu drop">
                             <li><a href="#">My Profile</a></li>
                             <li><a href="#">My Tours</a></li>
@@ -655,10 +657,10 @@
             <div class="cta-wrapper">
                 <h2 class="cta-title">Subscribe to our <span>Newsletter</span>
                 </h2>
-                <form action="#" class="form send-email">
+                <form action="#" name="subscribe form" class="form send-email">
                     <input type="email" name="email"
-                        placeholder="Your email address" class="input"
-                        required />
+                        placeholder="Your email address"
+                        aria-label="write your email" class="input" required />
                     <button type="submit"
                         class="btn-form btn-send">Send</button>
                 </form>
@@ -666,7 +668,7 @@
         </div>
     </article>
     <article class="activities">
-        <div class="container section-padding">
+        <div class="container">
             <h2 class="section-subtitle">Other activities</h2>
             <div class="activities-wrap">
                 <div class="activity-card">
@@ -755,14 +757,17 @@
                         <h2>Social network</h2>
                         <ul>
                             <li><a href="https://www.facebook.com"
+                                    rel="nofollow noopener noreferrer"
                                     title="facebook" target="_blank"><i
                                         class="fab fa-facebook"></i></a>
                             </li>
                             <li><a href="https://www.youtube.com"
+                                    rel="nofollow noopener noreferrer"
                                     title="youtube" target="_blank"><i
                                         class="fab fa-youtube"></i></a>
                             </li>
                             <li><a href="https://www.instagram.com"
+                                    rel="nofollow noopener noreferrer"
                                     title="instagram" target="_blank"><i
                                         class="fab fa-instagram"></i></a>
                             </li>
@@ -786,8 +791,11 @@
                         form</p>
                     <ul>
                         <li><i class="info-pic fas fa-map-marker-alt"></i>
-                            <p>9748 Blossom Hill Rd undefined Lansing, Idaho
-                                68545 United States</p>
+                            <a href="https://goo.gl/maps/TBfZi4zQjybMZ1M68"
+                                rel="nofollow noopener noreferrer"
+                                target="_blank" title="map">9748
+                                Blossom Hill Rd undefined Lansing, Idaho 68545
+                                United States</a>
                         </li>
                         <li><i class="info-pic fas fa-phone-alt"></i>
                             <div class="tel-wrap">
@@ -809,32 +817,26 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-contact__form">
+                <form action="#" class="contact-us">
                     <h2>Send us a message</h2>
-                    <form action="#" class="contact-us">
-                        <div class="form-top">
-                            <input type="text" name="name"
-                                placeholder="Your Full Name*" required>
-                            <input type="tel" name="tel"
-                                placeholder="Phone Number*" required>
-                        </div>
-                        <textarea name="message"
-                            placeholder="Message"></textarea>
-                        <div class="form-bottom">
-                            <button type="submit"
-                                class="btn-form btn-send">Send</button>
-                            <p>* Required Fields</p>
-                        </div>
-                    </form>
-                </div>
+                    <input type="text" name="name" placeholder="Your Full Name*"
+                        aria-label="write your name" required>
+                    <input type="tel" name="tel" placeholder="Phone Number*"
+                        aria-label="write your phone number" required>
+                    <textarea name="message" placeholder="Message"
+                        aria-label="write your message"></textarea>
+                    <button type="submit"
+                        class="btn-form btn-send">Send</button>
+                    <p>* Required Fields</p>
+                </form>
             </div>
             <div class="footer-bottom">
-                <div class="footer-bottom__links">
-                    <a href="#">Disclaimer</a>
-                    <a href="#">Conditions of use</a>
-                    <a href="#">Cancellation policy</a>
-                </div>
-                <img width="1" height="1" loading="lazy" src="img/brands.svg"
+                <ul class="footer-bottom__links">
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Conditions of use</a></li>
+                    <li><a href="#">Cancellation policy</a></li>
+                </ul>
+                <img width="1" height="1" loading="lazy" src="img/brands.webp"
                     alt="brands">
             </div>
         </div>

@@ -465,6 +465,7 @@ input {
 .form {
   display: flex;
   align-items: center;
+  max-width: 350px;
 }
 .form img {
   width: 12px;
@@ -472,6 +473,7 @@ input {
 }
 .input {
   padding: 12.4px 0 12.4px 20px;
+  width: 81.43%;
   border-radius: 6px 0 0 6px;
   font-size: 12px;
   width: 285px;
@@ -480,6 +482,7 @@ input {
 }
 .btn-form {
   padding: 20px 32.5px;
+  width: 18.57%;
   color: #fff;
   background: url("../img/search.svg") no-repeat 50% 50%, var(--theme-color);
   border-radius: 0 6px 6px 0;
@@ -490,7 +493,6 @@ input {
   background: url("../img/cart.svg") no-repeat 0 0 / cover;
   width: 24px;
   height: 24px;
-  padding: 10px;
   position: relative;
   margin-left: auto;
 }
@@ -1188,7 +1190,7 @@ input {
   line-height: 1.25;
 }
 .btn-activities {
-  padding: 8.2px 16.1px;
+  padding: 9px 21px;
   font-size: 12px;
 }
 /* ============ ACTIVITIES END ============ */
@@ -1328,7 +1330,9 @@ input {
 }
 .contact-us button {
   border-radius: 4px;
-  padding: 19px 65.5px;
+  padding: 19px 10px;
+  width: 47.4%;
+  max-width: 160px;
 }
 .contact-us p {
   font-weight: 700;
@@ -1403,7 +1407,76 @@ input {
 }
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-}
+  .header .logo {
+    margin-right: 0;
+  }
+  .form {
+    max-width: 300px;
+  }
+  .cart {
+    margin: 0;
+  }
+  .account-menu {
+    margin-left: 0;
+  }
+  .menu {
+    font-size: 12px;
+  }
+  .banner-img-wrap {
+    width: 62%;
+  }
+  .options-side > h4 {
+    font-size: 22px;
+  }
+  .options-side > p:last-child {
+    font-size: 16px;
+  }
+  .options-side > span:last-child p {
+    font-size: 16px;
+  }
+  .info-menu a {
+    font-size: 12px;
+  }
+  .list-sm li {
+    align-items: flex-start;
+  }
+  .list-right-part {
+    margin-top: 20px;
+  }
+  .list-content-lg {
+    justify-content: space-around;
+  }
+  .wide-card {
+    width: 690px;
+  }
+  .card {
+    width: 330px;
+  }
+  .card img {
+    width: 330px;
+  }
+  .cta-wrapper {
+    justify-content: space-around;
+  }
+  .activity-card {
+    width: 180px;
+  }
+  .activity-card img {
+    width: 180px;
+    height: 180px;
+  }
+  .activities-content h3 {
+    font-size: 14px;
+  }
+  .activities-content {
+    padding: 0 24px 25px 25px;
+  }
+  .btn-activities {
+    padding: 6.2px 14.1px;
+  }
+  .footer h2 {
+    font-size: 16px;
+  }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 }

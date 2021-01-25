@@ -1102,6 +1102,7 @@ input {
 .cta-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 730px;
   margin: 0 auto;
@@ -1232,6 +1233,12 @@ input {
   display: flex;
   justify-content: space-between;
   margin-bottom: 90px;
+}
+.footer-top__list-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 73.5%;
+  /* flex-wrap: wrap; */
 }
 .footer-top a {
   transition: 0.3s;
@@ -1369,12 +1376,18 @@ input {
 /* ============ ADAPTIVE START ============ */
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
   .info {
     margin-left: 30px;
     width: 35%;
   }
   .info iframe {
     width: 100%;
+  }
+  .list-content {
+    padding: 20px;
   }
   .list-sm li:nth-child(4) {
     margin-bottom: 23.6px;
@@ -1407,6 +1420,9 @@ input {
 }
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
   .header .logo {
     margin-right: 0;
   }
@@ -1415,6 +1431,12 @@ input {
   }
   .cart {
     margin: 0;
+  }
+  .account-menu .account-link {
+    padding-right: 5px;
+  }
+  .account-link p {
+    margin-left: 10px;
   }
   .account-menu {
     margin-left: 0;
@@ -1426,16 +1448,20 @@ input {
     width: 62%;
   }
   .options-side > h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .options-side > p:last-child {
-    font-size: 16px;
+    font-size: 14px;
   }
   .options-side > span:last-child p {
-    font-size: 16px;
+    font-size: 14px;
   }
-  .info-menu a {
-    font-size: 12px;
+  .options-side > span:last-child {
+    margin-top: 26px;
+  }
+  .info-menu {
+    flex-wrap: wrap;
+    padding: 0 34px;
   }
   .list-sm li {
     align-items: flex-start;
@@ -1446,6 +1472,9 @@ input {
   .list-content-lg {
     justify-content: space-around;
   }
+  .sublist:nth-of-type(even) {
+    width: 230px;
+  }
   .wide-card {
     width: 690px;
   }
@@ -1455,32 +1484,226 @@ input {
   .card img {
     width: 330px;
   }
-  .cta-wrapper {
-    justify-content: space-around;
+  .btn-send {
+    padding: 21.5px 14px;
   }
   .activity-card {
-    width: 180px;
+    width: 46%;
   }
   .activity-card img {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: auto;
   }
-  .activities-content h3 {
-    font-size: 14px;
-  }
-  .activities-content {
-    padding: 0 24px 25px 25px;
-  }
-  .btn-activities {
-    padding: 6.2px 14.1px;
+  .activity-card:nth-child(n + 3) {
+    margin-top: 50px;
   }
   .footer h2 {
     font-size: 16px;
   }
+  .contact-us input {
+    padding-left: 20px;
+  }
+  .contact-us textarea {
+    padding: 15px 20px;
+  }
+}
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+  .header-top__link:last-of-type {
+    margin-left: 0;
+  }
+  .header-main .form {
+    order: 1;
+    margin: 10px auto 0 auto;
+  }
+  .header-content {
+    flex-wrap: wrap;
+  }
+  .cart {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .menu li:first-of-type > a,
+  .menu li:last-of-type > a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .banner-wrap {
+    flex-direction: column;
+  }
+  .banner-img-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+  }
+  .options {
+    width: 48%;
+  }
+  .info iframe {
+    width: 48%;
+  }
+  .list-sm-wrap {
+    flex-direction: column;
+  }
+  .list {
+    width: 100%;
+  }
+  .list-lg .sublist:nth-child(n + 2) {
+    margin-top: 40px;
+  }
+  .sublist:nth-of-type(even) {
+    width: 266px;
+  }
+  .card:nth-of-type(even) {
+    margin-right: 0;
+  }
+  .wide-card {
+    height: 450px;
+  }
+  .wide-card img {
+    height: 450px;
+  }
+  .wide-card .card-content {
+    padding: 30px 20px 30px 30px;
+  }
+  .wide-card .card-description {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  .wide-card .btn-card {
+    padding: 12px 20px;
+  }
+  .card img {
+    height: auto;
+  }
+  .card-title {
+    margin-bottom: 20px;
+  }
+  .review-card::after {
+    left: 375px;
+  }
+  .cta-title {
+    font-size: 20px;
+  }
+  .cta-title span {
+    font-size: 32px;
+  }
+  .footer-contact {
+    flex-direction: column;
+  }
+  .footer-contact__info {
+    margin-right: 0;
+  }
+  .footer-contact__info li:nth-last-child(n + 2) {
+    margin-bottom: 15px;
+  }
+  .contact-us {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .send-email {
+    max-width: 48%;
+  }
+  .send-email .input {
+    padding-left: 20px;
+  }
+  .btn-send {
+    padding: 21.5px 10px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bottom img {
+    position: static;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-top__left-side {
+    margin-right: -20px;
+  }
+  .header-main {
+    padding: 10px 0px 20px 0;
+  }
+  .cart {
+    margin-left: 0;
+  }
+  .form {
+    width: 100%;
+  }
+  .header-nav {
+    padding: 10px 0;
+  }
+  .bread-crumbs {
+    margin-bottom: 20px;
+  }
+  .banner-pic-title {
+    font-size: 16px;
+  }
+  .mark {
+    padding: 4px 5px;
+  }
+  .mark p:nth-child(2) {
+    font-size: 12px;
+  }
+  .mark p > span {
+    font-size: 8px;
+  }
+  .banner-hotel-pic {
+    width: 100%;
+    height: auto;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .options {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .info iframe {
+    width: 100%;
+  }
+  .list-content {
+    justify-content: space-between;
+  }
+  .list-sm {
+    columns: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .wide-card.mobile {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .card img {
+    width: 100%;
+  }
+  .send-email {
+    width: 100%;
+  }
+  .btn-send {
+    width: 50px;
+  }
 }
 /* ============ ADaPTIVE START ============ */

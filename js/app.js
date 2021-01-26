@@ -7,7 +7,7 @@ const reviewSlider = new Swiper('.review-slider', {
       },
     // Responsive breakpoints
     breakpoints: {
-      // window >=768px
+      // window >=320px
         320: {
           spaceBetween: 30,
           pagination: {

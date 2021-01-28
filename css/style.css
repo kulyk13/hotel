@@ -1546,6 +1546,12 @@ input {
   .container {
     max-width: 540px;
   }
+  .section-title {
+    font-size: 30px;
+  }
+  .section-padding {
+    padding-bottom: 70px;
+  }
   .header-top__link:last-of-type {
     margin-left: 0;
   }
@@ -1555,6 +1561,7 @@ input {
   }
   .header-content {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .cart {
     margin-left: auto;
@@ -1564,6 +1571,9 @@ input {
   .menu li:last-of-type > a {
     margin-left: 0;
     margin-right: 0;
+  }
+  .bread-crumbs {
+    margin-bottom: 20px;
   }
   .banner-wrap {
     flex-direction: column;
@@ -1590,11 +1600,26 @@ input {
   .list {
     width: 100%;
   }
-  .list-lg .sublist:nth-child(n + 2) {
+  .list-content {
+    padding: 20px;
+  }
+  .list-content i {
+    margin-right: 10px;
+  }
+  .list-content.list-content-lg {
+    padding: 20px 20px 30px 20px;
+  }
+  .list-lg .sublist:nth-child(n + 3) {
     margin-top: 40px;
   }
+  .list-content-lg {
+    justify-content: space-between;
+  }
+  .sublist {
+    width: 230px;
+  }
   .sublist:nth-of-type(even) {
-    width: 266px;
+    width: 220px;
   }
   .card:nth-of-type(even) {
     margin-right: 0;
@@ -1624,11 +1649,85 @@ input {
   .review-card::after {
     left: 375px;
   }
+  .cta .section-padding {
+    padding-bottom: 100px;
+  }
   .cta-title {
     font-size: 20px;
   }
   .cta-title span {
     font-size: 32px;
+  }
+  .btn-send {
+    padding: 21.5px 9px;
+  }
+  .footer h2 {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .footer .logo {
+    margin-right: 50px;
+  }
+  .footer-top {
+    margin-bottom: 50px;
+  }
+  .footer-top__list-wrap {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .footer-top__list {
+    width: 100%;
+    position: relative;
+  }
+  .footer-top__list::before {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+    color: #fff;
+  }
+  .footer-top__list h2 {
+    border-radius: 3px;
+    padding: 10px;
+    background: var(--theme-color);
+  }
+  .footer-top__list > ul {
+    display: none;
+    transition: 0.3s;
+  }
+  .footer-top__list.active h2 {
+    margin-bottom: 0;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid;
+  }
+  .footer-top__list.active > ul {
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px 0 10px 10px;
+    height: auto;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    transition: 0.3s;
+  }
+  .footer-top__list.active > ul > li {
+    color: var(--secondary-bg-color);
+  }
+  .footer-top__list.active::before {
+    content: "-";
+    transition: 0.3s;
+  }
+  .footer-top__double-list {
+    order: 1;
+  }
+  .footer-social-networks {
+    margin-left: 10px;
+  }
+  .footer-social-networks > ul {
+    display: flex;
+    right: 3px;
   }
   .footer-contact {
     flex-direction: column;
@@ -1648,9 +1747,6 @@ input {
   }
   .send-email .input {
     padding-left: 20px;
-  }
-  .btn-send {
-    padding: 21.5px 10px;
   }
   .footer-bottom {
     flex-direction: column;
@@ -1739,5 +1835,62 @@ input {
   .btn-send {
     width: 50px;
   }
-}
+  .activities-wrap {
+    flex-direction: column;
+  }
+  .footer {
+    font-size: 12px;
+    padding: 40px 0 30px 0;
+  }
+  .footer li {
+    line-height: 2;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .logo {
+    margin-right: 0;
+  }
+  .footer-top__list-wrap h2 {
+    font-size: 12px;
+  }
+  .footer-top__list::before {
+    top: 6px;
+    right: 10px;
+  }
+  .footer-social-networks h2 {
+    display: none;
+  }
+  .footer-social-networks > ul {
+    right: 54px;
+    top: 10px;
+  }
+  .contact-us {
+    flex-direction: column;
+  }
+  .contact-us input {
+    width: 100%;
+  }
+  .contact-us input:first-of-type {
+    margin-bottom: 15px;
+  }
+  .footer .contact-us button {
+    max-width: 100%;
+    width: 100%;
+    order: 1;
+    margin-top: 15px;
+  }
+  .footer-contact {
+    margin-bottom: 40px;
+  }
+  .footer-bottom__links a {
+    text-align: center;
+  }
+  .footer-bottom__links li:nth-of-type(2) {
+    order: -1;
+  }
+  .footer-bottom__links li:nth-of-type(3) {
+    width: 112px;
+  }
 /* ============ ADaPTIVE START ============ */

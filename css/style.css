@@ -1688,6 +1688,7 @@ input {
     font-weight: bold;
     z-index: 1;
     color: #fff;
+    transition: 0.6s;
   }
   .footer-top__list h2 {
     border-radius: 3px;
@@ -1695,8 +1696,9 @@ input {
     background: var(--theme-color);
   }
   .footer-top__list > ul {
-    display: none;
-    transition: 0.3s;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s linear;
   }
   .footer-top__list.active h2 {
     margin-bottom: 0;
@@ -1704,20 +1706,18 @@ input {
     border: 1px solid;
   }
   .footer-top__list.active > ul {
-    display: block;
     margin-bottom: 20px;
-    padding: 20px 0 10px 10px;
+    padding: 10px;
     height: auto;
     background: #fff;
     border-radius: 0 0 3px 3px;
-    transition: 0.3s;
   }
   .footer-top__list.active > ul > li {
     color: var(--secondary-bg-color);
   }
   .footer-top__list.active::before {
     content: "-";
-    transition: 0.3s;
+    transition: 0.6s;
   }
   .footer-top__double-list {
     order: 1;
@@ -1893,4 +1893,5 @@ input {
   .footer-bottom__links li:nth-of-type(3) {
     width: 112px;
   }
+}
 /* ============ ADaPTIVE START ============ */

@@ -1583,11 +1583,14 @@ input {
   }
   .burger-menu {
     position: fixed;
+    padding: 30px 25px 20px 10px;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 35%;
+    height: 100vh;
     background-color: #fff;
     z-index: 10;
+    overflow-y: scroll;
     transition: 0.3s;
     transform: translateX(-100%);
   }
@@ -1596,6 +1599,10 @@ input {
   }
   .burger-menu__content {
     position: relative;
+  }
+  .burger-menu h2 {
+    font-size: 14px;
+    font-weight: 700;
   }
   .burger-btn {
     min-width: auto;
@@ -1606,8 +1613,8 @@ input {
   }
   .burger-btn.close {
     position: absolute;
-    right: 16px;
-    top: 29px;
+    right: -15px;
+    top: -15px;
     color: var(--secondary-bg-color);
   }
   .btn.burger-btn:hover,
@@ -1615,8 +1622,21 @@ input {
     color: #fff;
     background: var(--theme-color);
   }
+  .header-top {
+    padding-top: 0;
+    font-size: 11px;
+  }
+  .header-top i {
+    margin-right: 10px;
+    font-size: 14px;
+  }
   .header-top__link:last-of-type {
     margin-left: 0;
+  }
+  .header-top__left-side {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10px;
   }
   .header-main .form {
     order: 1;
@@ -1624,11 +1644,29 @@ input {
   }
   .header-content {
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .account-menu {
+    padding-top: 10px;
+  }
+  .account-menu .account-link {
+    padding: 0 0 0 10px;
   }
   .cart {
     margin-left: auto;
-    margin-right: 20px;
+  }
+  .dropmenu {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 0;
+    margin-top: 10px;
+  }
+  .dropmenu > li,
+  .dropmenu > li:hover,
+  .dropmenu > li:focus-within {
+    border: none;
   }
   .menu li:first-of-type > a,
   .menu li:last-of-type > a {
@@ -1665,6 +1703,7 @@ input {
   }
   .info-menu {
     justify-content: space-around;
+    margin-top: 50px;
   }
   .list-sm-wrap {
     flex-direction: column;
@@ -1785,7 +1824,7 @@ input {
     content: "+";
     position: absolute;
     right: 20px;
-    top: 8px;
+    top: 11px;
     font-size: 18px;
     font-weight: bold;
     z-index: 1;
@@ -1800,7 +1839,7 @@ input {
     content: "-";
     position: absolute;
     right: 20px;
-    top: 4px;
+    top: 7px;
     font-size: 24px;
     font-weight: bold;
     z-index: 1;
@@ -1813,6 +1852,7 @@ input {
   }
   .footer-top__list h2 {
     border-radius: 3px;
+    border: 1px solid transparent;
     padding: 10px;
     background: var(--theme-color);
   }

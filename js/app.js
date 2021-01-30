@@ -1,6 +1,10 @@
+burgerBtnOpen.onclick = () => burgerMenu.classList.add('open')
+burgerBtnClose.onclick = () => burgerMenu.classList.remove('open')
 // Swiper slider
 const reviewSlider = new Swiper('.review-slider', {
-  lazy: true,
+  lazy: {
+      loadPrevNext: true,
+    },
   loop: true,
   navigation: {
       nextEl: '.slider-arrow-forward',

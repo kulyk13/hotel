@@ -1914,27 +1914,70 @@ input {
   .container {
     max-width: 100%;
   }
+  .header-mobile {
+    padding: 15px 0;
+  }
   .header-mobile__content {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .header-content {
     flex-direction: column;
     align-items: center;
   }
+  .form {
+    max-width: 100%;
+    order: 1;
+    margin: 0 auto;
+  }
+  .burger-menu {
+    width: 100%;
+    right: 0;
+    transform: translateX(+100%);
+    text-align: center;
+    opacity: 0.95;
+    padding: 15px 10px;
+  }
+  .burger-menu h2 {
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .burger-btn.close {
+    top: 9px;
+    right: 7px;
+  }
   .header-top__left-side {
-    margin-right: -20px;
+    align-items: center;
+  }
+  .header-top__left-side p:first-of-type {
+    margin-right: 0;
+  }
+  .header-top__left-side a {
+    margin-left: 0;
+  }
+  .account-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-menu .account-link {
+    padding: 10px;
+  }
+  .cart {
+    margin-left: 0;
+    margin-top: 10px;
   }
   .header-main {
     padding: 10px 0px 20px 0;
   }
-  .cart {
-    margin-left: 0;
+  .burger-menu__menu {
+    margin-top: 10px;
   }
-  .form {
-    width: 100%;
+  .burger-menu__menu h2 {
+    margin-bottom: 10px;
   }
-  .header-nav {
-    padding: 10px 0;
+  .menu {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
   }
   .bread-crumbs {
     margin-bottom: 20px;
@@ -1960,10 +2003,15 @@ input {
   }
   .options {
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    order: 1;
   }
   .info iframe {
     width: 100%;
+  }
+  .info-menu {
+    flex-direction: column;
+    align-items: center;
   }
   .list-content {
     justify-content: space-between;
@@ -1972,6 +2020,17 @@ input {
     columns: 1;
     display: flex;
     flex-direction: column;
+  }
+  .list-sm li:nth-child(4) {
+    margin-top: 23.6px;
+    margin-bottom: 0;
+  }
+  .list-sm li:nth-child(5) {
+    margin-top: 23.6px;
+    margin-bottom: 0;
+  }
+  .list-lg .sublist:nth-child(n + 2) {
+    margin-top: 30px;
   }
   .wide-card.mobile {
     width: 100%;
@@ -1983,11 +2042,14 @@ input {
   .card img {
     width: 100%;
   }
+  .review-card {
+    padding: 15px;
+  }
   .send-email {
     width: 100%;
   }
   .btn-send {
-    width: 50px;
+    width: 60px;
   }
   .activities-wrap {
     flex-direction: column;
@@ -2005,20 +2067,29 @@ input {
   }
   .footer .logo {
     margin-right: 0;
+    margin-bottom: 10px;
   }
   .footer-top__list-wrap h2 {
     font-size: 12px;
   }
   .footer-top__list::before {
-    top: 6px;
+    top: 8px;
     right: 10px;
+  }
+  .footer-top__list::after {
+    top: 3px;
+    right: 10px;
+  }
+  .footer-social-networks {
+    margin-left: -10px;
   }
   .footer-social-networks h2 {
     display: none;
   }
   .footer-social-networks > ul {
-    right: 54px;
-    top: 10px;
+    position: static;
+    display: flex;
+    justify-content: center;
   }
   .contact-us {
     flex-direction: column;

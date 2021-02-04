@@ -2042,7 +2042,7 @@ input {
   }
   .banner-hotel-pic {
     width: 100%;
-    height: auto;
+    height: 275px;
   }
   .info {
     flex-direction: column;
